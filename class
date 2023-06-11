@@ -1,0 +1,24 @@
+
+    public class Person
+    {
+        public string Name;
+        public void Introduce(string to)
+        {
+            Console.WriteLine("Hello {0}, I'm {1}", to, Name);
+        }
+    }
+
+
+
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var person = new Person();
+            person.Name = "John";
+            person.Introduce("Heba");
+        }
+    }
+
+}
